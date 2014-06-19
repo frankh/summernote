@@ -1,7 +1,7 @@
 define('summernote/settings', function () {
   /**
-   * @class settings 
-   * 
+   * @class settings
+   *
    * @singleton
    */
   var settings = {
@@ -9,16 +9,16 @@ define('summernote/settings', function () {
     version: '@VERSION',
 
     /**
-     * 
+     *
      * for event options, reference to EventHandler.attach
-     * 
-     * @property {Object} options 
-     * @property {String/Number} [options.width=null] set editor width 
+     *
+     * @property {Object} options
+     * @property {String/Number} [options.width=null] set editor width
      * @property {String/Number} [options.height=null] set editor height, ex) 300
      * @property {String/Number} options.minHeight set minimum height of editor
      * @property {String/Number} options.maxHeight
-     * @property {String/Number} options.focus 
-     * @property {Number} options.tabsize 
+     * @property {String/Number} options.focus
+     * @property {Number} options.tabsize
      * @property {Boolean} options.styleWithSpan
      * @property {Object} options.codemirror
      * @property {Object} [options.codemirror.mode='text/html']
@@ -267,6 +267,18 @@ define('summernote/settings', function () {
           textToDisplay: 'Text to display',
           url: 'To what URL should this link go?',
           openInNewWindow: 'Open in new window'
+        },
+				pasteword: {
+					insert: 'Paste from Word',
+					description: 'Because of your browser security settings, the editor is not able to access your clipboard data directly. ' +
+						'You are required to paste it again in this window. Please paste inside the following box using the keyboard (Ctrl/Cmd+V).'
+				},
+        video: {
+          video: 'Video',
+          videoLink: 'Video Link',
+          insert: 'Insert Video',
+          url: 'Video URL?',
+          providers: '(YouTube, Vimeo, Vine, Instagram, or DailyMotion)'
         },
         table: {
           table: 'Table'

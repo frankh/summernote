@@ -121,6 +121,18 @@ define([
           hide: true
         });
       },
+      pasteword: function (lang) {
+        return tplIconButton('fa fa-clipboard icon-clipboard', {
+          event: 'showPasteWordDialog',
+          title: lang.pasteword.insert
+        });
+      },
+      video: function (lang) {
+        return tplIconButton('fa fa-youtube-play icon-play', {
+          event: 'showVideoDialog',
+          title: lang.video.video
+        });
+      },
       table: function (lang) {
         var dropdown = '<ul class="note-table dropdown-menu">' +
                          '<div class="note-dimension-picker">' +
@@ -601,7 +613,6 @@ define([
         var footer = '<button href="#" class="btn btn-primary note-link-btn disabled" disabled>' + lang.link.insert + '</button>';
         return tplDialog('note-link-dialog', lang.link.insert, body, footer);
       },
-
       help: function (lang, options) {
         var body = '<a class="modal-close pull-right" aria-hidden="true" tabindex="-1">' + lang.shortcut.close + '</a>' +
                    '<div class="title">' + lang.shortcut.shortcuts + '</div>' +
@@ -612,6 +623,22 @@ define([
                      '<a href="//github.com/summernote/summernote/issues" target="_blank">Issues</a>' +
                    '</p>';
         return tplDialog('note-help-dialog', '', body, '');
+      },
+      pasteWord: function (lang) {
+        var body = '<div class="form-group">' +
+                     '<label>' + lang.pasteword.description + '</label>' +
+                     '<textarea class="note-pasteword-text form-control span12"></textarea>' +
+                   '</div>';
+        var footer = '<button href="#" class="btn btn-primary note-pasteword-btn disabled" disabled>' + lang.pasteword.insert + '</button>';
+        return tplDialog('note-pasteword-dialog', lang.pasteword.insert, body, footer);
+      },
+      videoDialog:  function (lang) {
+        var body = '<div class="form-group">' +
+                     '<label>' + lang.video.url + '</label>&nbsp;<small class="text-muted">' + lang.video.providers + '</small>' +
+                     '<input class="note-video-url form-control span12" type="text" />' +
+                   '</div>';
+        var footer = '<button href="#" class="btn btn-primary note-video-btn disabled" disabled>' + lang.video.insert + '</button>';
+        return tplDialog('note-video-dialog', lang.video.insert, body, footer);
       }
     };
 

@@ -8,9 +8,10 @@ define([
   'summernote/editing/Style',
   'summernote/editing/Typing',
   'summernote/editing/Table',
-  'summernote/editing/Bullet'
+  'summernote/editing/Bullet',
+  'summernote/editing/PasteWord'
 ], function (agent, func, list, dom, range, async,
-             Style, Typing, Table, Bullet) {
+             Style, Typing, Table, Bullet, PasteWord) {
   /**
    * @class editing.Editor
    *
@@ -560,6 +561,13 @@ define([
         endPoint.offset
       ).select();
 
+      afterCommand($editable);
+    };
+
+    this.insertText = function ($editable, sValue) {
+      beforeCommand($editable);
+      sValue = PasteWord.format(sValue);
+      document.execCommand('insertText', false, sValue);
       afterCommand($editable);
     };
 
