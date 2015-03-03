@@ -6,7 +6,7 @@
  * Copyright 2013-2015 Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license./
  *
- * Date: 2015-03-03T11:36Z
+ * Date: 2015-03-03T11:41Z
  */
 (function (factory) {
   /* global define */
@@ -2386,8 +2386,7 @@
         },
 				pasteword: {
 					insert: 'Paste from Word',
-					description: 'Because of your browser security settings, the editor is not able to access your clipboard data directly. ' +
-						'You are required to paste it again in this window. Please paste inside the following box using the keyboard (Ctrl/Cmd+V).'
+					description: 'Please paste inside the following box.'
 				},
         video: {
           video: 'Video',

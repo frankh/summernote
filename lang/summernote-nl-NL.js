@@ -34,8 +34,7 @@
       },
       pasteword: {
         insert: 'Plakken uit Word',
-        description: 'Omdat uw browser beveiliging het niet toestaat, kunnen we niet uw klembord inhoud direct invoeren.' +
-          'U moet het opnieuw plakken in het venster hier onder met (Ctrl/Cmd+V).'
+        description: 'U moet het opnieuw plakken in het venster hier onder met (Ctrl/Cmd+V).'
       },
       video: {
         video: 'Video',

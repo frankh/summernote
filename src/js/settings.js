@@ -270,8 +270,7 @@ define('summernote/settings', function () {
         },
 				pasteword: {
 					insert: 'Paste from Word',
-					description: 'Because of your browser security settings, the editor is not able to access your clipboard data directly. ' +
-						'You are required to paste it again in this window. Please paste inside the following box using the keyboard (Ctrl/Cmd+V).'
+					description: 'Please paste inside the following box.'
 				},
         video: {
           video: 'Video',
