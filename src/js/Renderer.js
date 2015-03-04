@@ -632,7 +632,7 @@ define([
         var footer = '<button href="#" class="btn btn-primary note-pasteword-btn disabled" disabled>' + lang.pasteword.insert + '</button>';
         return tplDialog('note-pasteword-dialog', lang.pasteword.insert, body, footer);
       },
-      videoDialog:  function (lang) {
+      video:  function (lang) {
         var body = '<div class="form-group">' +
                      '<label>' + lang.video.url + '</label>&nbsp;<small class="text-muted">' + lang.video.providers + '</small>' +
                      '<input class="note-video-url form-control span12" type="text" />' +

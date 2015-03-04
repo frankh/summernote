@@ -6,7 +6,7 @@
  * Copyright 2013-2015 Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license./
  *
- * Date: 2015-03-03T11:41Z
+ * Date: 2015-03-04T17:06Z
  */
 (function (factory) {
   /* global define */
@@ -5874,7 +5874,7 @@
         var footer = '<button href="#" class="btn btn-primary note-pasteword-btn disabled" disabled>' + lang.pasteword.insert + '</button>';
         return tplDialog('note-pasteword-dialog', lang.pasteword.insert, body, footer);
       },
-      videoDialog:  function (lang) {
+      video:  function (lang) {
         var body = '<div class="form-group">' +
                      '<label>' + lang.video.url + '</label>&nbsp;<small class="text-muted">' + lang.video.providers + '</small>' +
                      '<input class="note-video-url form-control span12" type="text" />' +

@@ -8,9 +8,8 @@
     factory(window.jQuery);
   }
 }(function ($) {
-  // template, editor
+  // template
   var tmpl = $.summernote.renderer.getTemplate();
-  var editor = $.summernote.eventHandler.getEditor();
 
   // core functions: range, dom
   var range = $.summernote.core.range;
@@ -18,7 +17,7 @@
 
   /**
    * createVideoNode
-   *  
+   *
    * @member plugin.video
    * @private
    * @param {String} url
@@ -122,7 +121,7 @@
 
   /**
    * toggle button status
-   *  
+   *
    * @member plugin.video
    * @private
    * @param {jQuery} $btn
@@ -192,7 +191,7 @@
    *    toolbar : [
    *        ['group', [ 'video' ]]
    *    ]
-   *    ...    
+   *    ...
    *    });
    * ```
    */
@@ -232,7 +231,7 @@
      * @property {Function} events.showVideoDialog
      */
     events: {
-      showVideoDialog: function (layoutInfo) {
+      showVideoDialog: function (event, editor, layoutInfo) {
         var $dialog = layoutInfo.dialog(),
             $editable = layoutInfo.editable(),
             text = getTextOnRange($editable);
